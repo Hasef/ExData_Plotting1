@@ -47,12 +47,10 @@ ds4 <- mutate(ds3, dtstring= paste(Date,Time))
 ## Individual part w.r.t plot 4: Create the plot into the file plot4.png:
 ##
 png(filename="plot4.png", width=480, height=480)
+
 Sys.setlocale("LC_TIME", "English")
 
-##par(mfrow=c(2,2))
-
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) ##, oma = c(0, 0, 2, 0))
-
 
 ##upper left plot:
 with(ds4, plot(strptime(dtstring, "%d/%m/%Y %H:%M:%S"), 
