@@ -44,7 +44,7 @@ ds3 <- mutate(ds2
 ds4 <- mutate(ds3, dtstring= paste(Date,Time))
 
 ##
-## Individual part w.r.t plot 3: Create the plot into the file plot4.png:
+## Individual part w.r.t plot 3: Create the plot into the file plot3.png:
 ##
 png(filename="plot3.png", width=480, height=480)
 
